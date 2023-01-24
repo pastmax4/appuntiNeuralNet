@@ -1,0 +1,30 @@
+Get Started Tutorial for Python in Visual Studio Code
+
+https://code.visualstudio.com/docs/python/python-tutorial#:~:text=Getting%20Started%20with%20Python%20in%20VS%20Code%201,...%208%20Run%20Hello%20World%20...%20Altri%20elementi
+
+Per attivare il virtual env.
+
+#01)Apri terminal e dai i comandi:
+py -3 -m venv .venv
+.venv\scripts\activate
+
+Se si solleva un errore vedi la nota sotto.
+Viene creata una cartella .venv dove inserire il codice.
+
+#02)Select your new environment by using the Python: command from the Command Palette.
+Select Interpreter command from the Command Palette:
+Python: Select Interpreter
+
+Prendere quello indicato con venv...
+
+
+
+------------------------------------
+Nota. Attenzione:
+If the activate command generates the message 
+"Activate.ps1 is not digitally signed. You cannot run this script on the current system.", 
+then you need to temporarily change the PowerShell execution policy 
+to allow scripts to run (see About Execution Policies in the PowerShell documentation):
+
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+------------------------------------
